@@ -1,4 +1,4 @@
-💈 Projeto Barbearia [Nome da Barbearia]
+💈 Projeto Barbearia 
 📖 Sobre o Projeto
 Este é um projeto web desenvolvido para a [Nome da Barbearia], com o objetivo de modernizar a presença online do estabelecimento e otimizar o processo de agendamento de horários. A plataforma permite que os clientes conheçam os serviços, a equipe de barbeiros e agendem seus cortes de cabelo e barba de forma rápida e intuitiva.
 
