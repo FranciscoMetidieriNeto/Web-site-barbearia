@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Stilo's</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+    <header id="navbar-placeholder"></header>
+
+    <main class="container my-5">
+        <div class="contact-header text-center mb-5">
+            <h1 class="contact-title">Entre em Contato</h1>
+            <p class="lead">Tem alguma dúvida ou sugestão? Fale conosco! Estamos sempre prontos para atender você.</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <div class="contact-info-card">
+                    <h3 class="info-title mb-4">Nossas Informações</h3>
+                    
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="bi bi-geo-alt-fill me-3"></i>
+                            <span>
+                                <strong>Endereço:</strong><br>
+                                Av. Presidente Valentin Gentil, 790<br>
+                                Centro, Itápolis / SP - CEP: 14900-000
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="bi bi-telephone-fill me-3"></i>
+                            <span>
+                                <strong>Telefone / WhatsApp:</strong><br>
+                                (16) 99277-6473
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-envelope-fill me-3"></i>
+                            <span>
+                                <strong>E-mail:</strong><br>
+                                contato@barbeariastilos.com.br
+                            </span>
+                        </li>
+                    </ul>
+
+                    <hr class="contact-divider">
+
+                    <h3 class="info-title mb-4">Horário de Funcionamento</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between">
+                            <span>Segunda a Sexta:</span>
+                            <strong>09:00 - 19:00</strong>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span>Sábado:</span>
+                            <strong>09:00 - 17:00</strong>
+                        </li>
+                         <li class="d-flex justify-content-between">
+                            <span>Domingo:</span>
+                            <strong>Fechado</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                 <div class="contact-form-card">
+                    <h3 class="form-title mb-4">Envie sua Mensagem</h3>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="contact-name" class="form-label">Seu Nome</label>
+                            <input type="text" class="form-control" id="contact-name" required placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">Seu E-mail</label>
+                            <input type="email" class="form-control" id="contact-email" required placeholder="exemplo@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="contact-subject" required placeholder="Sobre qual assunto você quer falar?">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-message" class="form-label">Sua Mensagem</label>
+                            <textarea class="form-control" id="contact-message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-contact-submit w-100">Enviar Mensagem</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
+
+        <section id="mapa" class="mt-5">
+             <div class="map-container rounded overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.488398457723!2d-48.8139786885338!3d-21.3308569803029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e45399589d3d%3A0xfdef395e7c3ea450!2sAv.+Presidente+Valentin+Gentil%2C+790+-+Centro%2C+It%C3%A1polis+-+SP%2C+14900-000!5e0!3m2!1spt-BR!2sbr!4v1688402517056!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

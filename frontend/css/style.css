@@ -1,0 +1,332 @@
+/*
+ * =========================================
+ * --- Estilos Gerais ---
+ * =========================================
+ */
+body {
+    background-color: #000000;
+    color: #343a40;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- ESTILOS DE TÍTULO INDIVIDUALIZADOS --- */
+h1, h2, h3, h4, h5, h6 {
+    color: #343a40; /* Mantém a cor padrão para todos os títulos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Garante consistência da fonte */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #dcad12; /* Cor dourada para o título principal */
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/*
+ * =========================================
+ * --- Barra de Navegação (Navbar) ---
+ * =========================================
+ */
+.navbar {
+    min-height: 100px; /* Altura aumentada da navbar */
+    background-color: #fff890;
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #343a40;
+    transition: color 0.3s;
+}
+
+/*
+ * ==================================================
+ * --- Estilização Avançada dos Cards (MELHORADO) ---
+ * ==================================================
+ */
+.card {
+    background-color: #ffffff27;
+    border: 1px solid #fff890;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 5px #d4af3780;
+    transition: all 0.3s ease;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #d4af37;
+}
+
+.card-text {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 1.1em; /* Ajuste para melhor leitura */
+}
+
+.card-price {
+    color: #dcad12;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/*
+ * =========================================
+ * --- Componentes Específicos ---
+ * =========================================
+ */
+
+/* Footer */
+footer {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    text-align: center !important;
+    padding: 1.5rem 0;
+}
+
+/* Banner com Overlay */
+.banner {
+    position: relative;
+    background: url('../img/banner-com-texto.png') no-repeat center center;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Sobreposição um pouco mais escura */
+    z-index: 1;
+}
+
+.banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Carrossel com bordas arredondadas */
+.carousel {
+    border-radius: 15px; /* Bordas bem arredondadas para o container do carrossel */
+    overflow: hidden; /* Garante que as imagens não ultrapassem as bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-card-servico {
+    display: block; /* Permite a aplicação de margens automáticas */
+    width: 180px;   /* Largura da imagem */
+    height: 180px;  /* Altura da imagem */
+    margin: 1rem auto; /* Adiciona margem em cima/embaixo e centraliza horizontalmente */
+    object-fit: contain; /* Garante que a imagem não fique distorcida */
+}
+
+/* --- Seção de Localização (Layout Atualizado) --- */
+.location-image {
+    max-width: 250px; /* Define um tamanho máximo para a imagem, tornando-a menor */
+    height: 400px;
+    object-fit: contain;
+}
+
+.location-card {
+    background-color: #ffffff1a; /* Fundo transparente sutil */
+    border: 2px solid #dcad12;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(220, 173, 18, 0.4);
+    width: 90%;
+}
+
+.location-address p {
+    color: #e9ecef; /* Cinza claro para o texto do endereço */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.location-address strong {
+    color: #dcad12; /* Dourado para o 'Nosso endereço:' */
+}
+
+.btn-location {
+    background-color: #dcad12;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-location:hover {
+    background-color: #c5b918;
+    color: #000000;
+}
+
+.map-container iframe {
+    border-radius: 12px;
+}
+
+/*
+ * =========================================
+ * --- Botão de Agendamento dos Cards ---
+ * =========================================
+ */
+.btn-agendar {
+    background-color: #dcad12;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: center;
+    width: 80%;
+}
+
+.btn-agendar:hover {
+    background-color: #c5b918;
+    color: #000000;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(220, 173, 18, 0.3);
+}
+
+/*
+ * =========================================
+ * --- Ícones de Redes Sociais no Footer ---
+ * =========================================
+ */
+.social-icons {
+    margin-top: 1rem; /* Espaço entre o texto e os ícones */
+}
+
+/* Estilo base para todos os ícones */
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Transição apenas para o efeito de elevação */
+    display: inline-block;
+}
+
+.social-icons i {
+    font-size: 1.7rem; /* Tamanho dos ícones */
+    margin: 0 12px;    /* Espaçamento horizontal entre eles */
+    color: #f8f9fa; /* Cor branca padrão */
+    transition: color 0.3s ease, background 0.3s ease; /* Transição para as cores */
+}
+
+/* Efeito de elevação para todos os ícones */
+.social-icons a:hover {
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+
+/* --- HOVER PERSONALIZADO PARA CADA ÍCONE --- */
+
+/* Facebook: cor azul */
+.social-icons .facebook-icon:hover i {
+    color: #1877F2;
+}
+
+/* WhatsApp: cor verde */
+.social-icons .whatsapp-icon:hover i {
+    color: #25D366;
+}
+
+/* Instagram: gradiente de cores oficial */
+.social-icons .instagram-icon:hover i {
+    /* Cria o fundo com o gradiente do Instagram */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285aeb 90%);
+    
+    /* Faz o fundo ser visível apenas no formato do texto (ícone) */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Deixa a cor do ícone transparente para revelar o fundo */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+/*
+ * =========================================
+ * --- Responsividade ---
+ * =========================================
+ */
+@media (max-width: 991.98px) {
+    .location-image {
+        max-width: 150px;
+        margin-bottom: 1.5rem;
+    }
+
+    .location-address {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .navbar {
+        min-height: 70px; /* Altura ajustada para telas menores */
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .card {
+        min-height: auto; /* Altura automática para cards em telas menores */
+    }
+    
+    /* Ajusta os tamanhos dos títulos para telas menores */
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.25rem; /* Ajuste para melhor destaque */
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}

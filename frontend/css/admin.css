@@ -1,0 +1,84 @@
+/*
+ * =========================================
+ * --- Estilos do Painel de Administrador ---
+ * =========================================
+ */
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+#admin-panel h1, 
+#admin-panel h2,
+#admin-panel h3 {
+    color: #d4af37;
+}
+
+#admin-panel .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+
+#admin-panel .card-header {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #d4af37;
+}
+
+#admin-panel .table {
+    --bs-table-bg: #1e1e1e;
+    --bs-table-border-color: #333;
+    --bs-table-striped-bg: #2a2a2a;
+    --bs-table-hover-bg: #343a40;
+}
+
+#admin-panel .table td {
+    color: #FFFFFF;
+}
+
+#admin-panel .table thead th {
+    color: #FFFFFF;
+    background-color: #343a40;
+    border-color: #454d55;
+}
+
+#admin-panel .form-label {
+    color: #ced4da;
+}
+
+#admin-panel .form-control {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #6c757d;
+}
+
+#admin-panel .form-control:focus {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+#admin-panel .btn-success {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #000000;
+    font-weight: bold;
+}
+
+#admin-panel .btn-success:hover {
+    background-color: #b89b31;
+    border-color: #b89b31;
+    color: #000000;
+}
+
+#admin-panel .btn-warning {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#admin-panel .btn-danger, #logout-button-nav {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}

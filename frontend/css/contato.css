@@ -1,0 +1,104 @@
+/*
+ * =========================================
+ * --- Estilos da Página de Contato ---
+ * =========================================
+ */
+
+body {
+    background-color: #000000;
+    color: #f8f9fa;
+}
+
+/* --- Títulos --- */
+.contact-title {
+    color: #d4af37;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.contact-header .lead {
+    color: #ced4da;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-title, .form-title {
+    color: #d4af37;
+    font-weight: 600;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+
+/* --- Card de Informações --- */
+.contact-info-card, .contact-form-card {
+    background-color: #1a1a1a;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    height: 100%;
+}
+
+.contact-info-card ul {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.contact-info-card i {
+    font-size: 1.5rem;
+    color: #d4af37;
+    padding-top: 5px;
+}
+
+.contact-divider {
+    border-color: #333;
+    margin: 2rem 0;
+}
+
+
+/* --- Formulário de Contato --- */
+.form-label {
+    color: #ced4da;
+    font-weight: 500;
+}
+
+.form-control {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #6c757d;
+    padding: 0.75rem 1rem;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+.form-control:focus {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+.btn-contact-submit {
+    background-color: #d4af37;
+    border: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-contact-submit:hover {
+    background-color: #c5b918;
+    color: #000000;
+}
+
+
+/* --- Seção do Mapa --- */
+.map-container {
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}

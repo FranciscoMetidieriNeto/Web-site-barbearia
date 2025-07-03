@@ -1,0 +1,56 @@
+/* Estilo base da Navbar com efeito brilhante */
+.navbar {
+    /* Sua cor de base original, também serve como fallback */
+    background-color: #d4af37; 
+
+    /* O gradiente que cria o efeito de brilho (de cima para baixo) */
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 0.3), /* Um branco transparente para o brilho superior */
+        rgba(255, 255, 255, 0) 50% /* Transparente a partir do meio */
+    );
+    
+    /* Borda inferior um pouco mais escura para dar profundidade */
+    border-bottom: 1px solid #a39a13;
+
+    /* Uma sombra sutil para destacar a navbar da página */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Cor do nome da barbearia */
+.navbar-brand {
+    color: #343a40 !important;
+    font-size: 2em;
+}
+
+/* Cor dos links de navegação */
+.nav-link {
+    color: #343a40;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.nav-link:hover, .nav-link:focus {
+    color: #ffffff;
+}
+
+/* --- ESTILO SOMENTE PARA O BOTÃO ADMIN --- */
+
+.admin-link-button {
+    background-color: #343a40; /* Fundo escuro, usando a cor do texto dos outros links */
+    color: #ffffff !important; /* Texto branco para criar contraste */
+    border-radius: 6px;
+    font-size: 1em !important; /* Tamanho de fonte um pouco menor para caber no botão */
+    padding: 0.5em 1em !important; /* Espaçamento interno (usa 'em' para ser proporcional) */
+    margin-left: 1rem; /* Distância dos outros links */
+    transition: all 0.3s ease-in-out; /* Transição suave para todas as propriedades */
+}
+
+.admin-link-button:hover, .admin-link-button:focus {
+    background-color: #000000; /* Fundo preto no hover */
+    color: #d4af37 !important; /* Texto dourado no hover, combinando com a navbar */
+    transform: scale(1.05); /* Efeito de leve crescimento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
