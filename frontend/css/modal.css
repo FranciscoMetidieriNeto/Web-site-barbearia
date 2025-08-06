@@ -1,0 +1,62 @@
+/* Estilização para o Modal de Login */
+.modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+}
+.modal-header {
+    border-bottom: 1px solid #444; /* Linha de separação mais sutil */
+    padding-bottom: 0;
+}
+.modal-title {
+    color: #e0e0e0; /* Cor mais neutra para o título dentro da aba */
+}
+.modal-body .form-label {
+    color: #ced4da;
+}
+.modal-body .form-control {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #6c757d;
+}
+.modal-body .form-control:focus {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(220, 173, 18, 0.25);
+}
+.btn-login {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #000000;
+    font-weight: bold;
+}
+.btn-login:hover {
+    background-color: #c5b918;
+}
+
+/* Estilos para as Abas (Tabs) */
+.modal-header .nav-tabs {
+    border-bottom: none; /* Remove a linha padrão do bootstrap */
+}
+.modal-header .nav-link {
+    border: none;
+    color: #888; /* Cor para abas inativas */
+    font-weight: bold;
+}
+.modal-header .nav-link.active {
+    background-color: transparent;
+    color: #d4af37; /* Cor dourada para a aba ativa */
+    border-bottom: 2px solid #d4af37; /* Linha indicadora na aba ativa */
+}
+.modal-header .nav-link:hover {
+    color: #fff;
+}
+.text-center a {
+    color: #d4af37;
+    text-decoration: none;
+}
+.text-center a:hover {
+    text-decoration: underline;
+}

@@ -1,21 +1,17 @@
 <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Barbearia Stilo's</a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo_barbearia.png" alt="Logótipo Barbearia Stilo's" width="150">
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Página inicial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#cortes">Cortes</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#servicos">Serviços</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="agendamento.html">Agende seu horário</a>
@@ -23,13 +19,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
+                <li id="user-profile-link" class="nav-item d-none">
+                    <a class="nav-link" href="perfil.html">Meu Perfil</a>
+                </li>
+                <li id="employee-dashboard-link" class="nav-item d-none">
+                    <a class="nav-link" href="funcionario.html">Meu Painel</a>
+                </li>
+                <li id="admin-link" class="nav-item d-none">
+                    <a class="nav-link" href="admin.html">Painel Admin</a>
+                </li>
             </ul>
 
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link admin-link-button" href="admin.html">Admin</a>
+                <li id="auth-button-container" class="nav-item">
+                    <button type="button" class="nav-link auth-link-button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Logar
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabaseClient.js"></script>
 </nav>

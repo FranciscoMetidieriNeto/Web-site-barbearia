@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 
@@ -21,94 +22,88 @@
             <h1 class="contact-title">Entre em Contato</h1>
             <p class="lead">Tem alguma dúvida ou sugestão? Fale conosco! Estamos sempre prontos para atender você.</p>
         </div>
-
         <div class="row g-5">
             <div class="col-lg-5">
                 <div class="contact-info-card">
                     <h3 class="info-title mb-4">Nossas Informações</h3>
-                    
                     <ul class="list-unstyled">
-                        <li class="d-flex align-items-start mb-3">
-                            <i class="bi bi-geo-alt-fill me-3"></i>
-                            <span>
-                                <strong>Endereço:</strong><br>
-                                Av. Presidente Valentin Gentil, 790<br>
-                                Centro, Itápolis / SP - CEP: 14900-000
-                            </span>
-                        </li>
-                        <li class="d-flex align-items-start mb-3">
-                            <i class="bi bi-telephone-fill me-3"></i>
-                            <span>
-                                <strong>Telefone / WhatsApp:</strong><br>
-                                (16) 99277-6473
-                            </span>
-                        </li>
-                        <li class="d-flex align-items-start">
-                            <i class="bi bi-envelope-fill me-3"></i>
-                            <span>
-                                <strong>E-mail:</strong><br>
-                                contato@barbeariastilos.com.br
-                            </span>
-                        </li>
+                        <li class="d-flex align-items-start mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span><strong>Endereço:</strong><br>Av. Presidente Valentin Gentil, 790<br>Centro, Itápolis / SP - CEP: 14900-000</span></li>
+                        <li class="d-flex align-items-start mb-3"><i class="bi bi-telephone-fill me-3"></i><span><strong>Telefone / WhatsApp:</strong><br>(16) 99277-6473</span></li>
+                        <li class="d-flex align-items-start"><i class="bi bi-envelope-fill me-3"></i><span><strong>E-mail:</strong><br>contato@barbeariastilos.com.br</span></li>
                     </ul>
-
                     <hr class="contact-divider">
-
                     <h3 class="info-title mb-4">Horário de Funcionamento</h3>
                     <ul class="list-unstyled">
-                        <li class="d-flex justify-content-between">
-                            <span>Segunda a Sexta:</span>
-                            <strong>09:00 - 19:00</strong>
-                        </li>
-                        <li class="d-flex justify-content-between">
-                            <span>Sábado:</span>
-                            <strong>09:00 - 17:00</strong>
-                        </li>
-                         <li class="d-flex justify-content-between">
-                            <span>Domingo:</span>
-                            <strong>Fechado</strong>
-                        </li>
+                        <li class="d-flex justify-content-between"><span>Segunda a Sexta:</span><strong>09:00 - 19:00</strong></li>
+                        <li class="d-flex justify-content-between"><span>Sábado:</span><strong>09:00 - 17:00</strong></li>
+                        <li class="d-flex justify-content-between"><span>Domingo:</span><strong>Fechado</strong></li>
                     </ul>
                 </div>
             </div>
-
             <div class="col-lg-7">
                  <div class="contact-form-card">
                     <h3 class="form-title mb-4">Envie sua Mensagem</h3>
                     <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="contact-name" class="form-label">Seu Nome</label>
-                            <input type="text" class="form-control" id="contact-name" required placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="mb-3">
-                            <label for="contact-email" class="form-label">Seu E-mail</label>
-                            <input type="email" class="form-control" id="contact-email" required placeholder="exemplo@email.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="contact-subject" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="contact-subject" required placeholder="Sobre qual assunto você quer falar?">
-                        </div>
-                        <div class="mb-3">
-                            <label for="contact-message" class="form-label">Sua Mensagem</label>
-                            <textarea class="form-control" id="contact-message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
-                        </div>
+                        <div class="mb-3"><label for="contact-name" class="form-label">Seu Nome</label><input type="text" class="form-control" id="contact-name" required placeholder="Digite seu nome completo"></div>
+                        <div class="mb-3"><label for="contact-email" class="form-label">Seu E-mail</label><input type="email" class="form-control" id="contact-email" required placeholder="exemplo@email.com"></div>
+                        <div class="mb-3"><label for="contact-subject" class="form-label">Assunto</label><input type="text" class="form-control" id="contact-subject" required placeholder="Sobre qual assunto você quer falar?"></div>
+                        <div class="mb-3"><label for="contact-message" class="form-label">Sua Mensagem</label><textarea class="form-control" id="contact-message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea></div>
                         <button type="submit" class="btn btn-contact-submit w-100">Enviar Mensagem</button>
                     </form>
                  </div>
             </div>
         </div>
-
         <section id="mapa" class="mt-5">
              <div class="map-container rounded overflow-hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.488398457723!2d-48.8139786885338!3d-21.3308569803029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e45399589d3d%3A0xfdef395e7c3ea450!2sAv.+Presidente+Valentin+Gentil%2C+790+-+Centro%2C+It%C3%A1polis+-+SP%2C+14900-000!5e0!3m2!1spt-BR!2sbr!4v1688402517056!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
         </section>
-
     </main>
 
-    <footer id="footer-placeholder"></footer>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="mb-0">Barbearia Stilo's © 2025</p>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Entrar</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Cadastrar</button></li>
+                    </ul>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+                            <h5 class="modal-title mb-3">Acessar sua Conta</h5>
+                            <form id="login-modal-form">
+                                <div class="mb-3"><label for="username-modal" class="form-label">Usuário</label><input type="text" id="username-modal" class="form-control" required></div>
+                                <div class="mb-3"><label for="password-modal" class="form-label">Senha</label><input type="password" id="password-modal" class="form-control" required></div>
+                                <button type="submit" class="btn btn-login w-100 fw-bold mt-3">Entrar</button>
+                            </form>
+                            <div class="text-center mt-3"><a href="#" id="forgot-password-link">Esqueceu sua senha?</a></div>
+                            <div id="login-modal-error" class="alert alert-danger mt-3 d-none" role="alert"></div>
+                        </div>
+                        <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab" tabindex="0">
+                            <h5 class="modal-title mb-3">Crie sua Conta</h5>
+                            <form id="register-modal-form">
+                                <div class="mb-3"><label for="email-register" class="form-label">Seu E-mail</label><input type="email" id="email-register" class="form-control" required></div>
+                                <div class="mb-3"><label for="username-register" class="form-label">Nome de Usuário</label><input type="text" id="username-register" class="form-control" required></div>
+                                <div class="mb-3"><label for="password-register" class="form-label">Senha</label><input type="password" id="password-register" class="form-control" required></div>
+                                <button type="submit" class="btn btn-login w-100 fw-bold mt-3">Criar Conta</button>
+                            </form>
+                            <div id="register-modal-error" class="alert alert-danger mt-3 d-none" role="alert"></div>
+                            <div id="register-modal-success" class="alert alert-success mt-3 d-none" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+    <script src="js/login-modal.js"></script>
 </html>

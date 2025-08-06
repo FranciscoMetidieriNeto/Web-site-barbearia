@@ -1,0 +1,42 @@
+.settings-title {
+    color: #d4af37;
+    font-weight: 700;
+}
+.settings-header .lead {
+    color: #ced4da;
+}
+.settings-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+.settings-card .form-label {
+    color: #ced4da;
+    font-weight: 500;
+}
+.settings-card .form-control {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #6c757d;
+}
+.settings-card .form-control:focus {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(220, 173, 18, 0.25);
+}
+.settings-card .btn-primary {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #000000;
+    font-weight: bold;
+}
+.settings-card .btn-primary:hover {
+    background-color: #c5b918;
+    border-color: #c5b918;
+    color: #000000;
+}
+
+.senha-instrucao { 
+    color: red !important;
+    font-size: 1.3em; /* Use !important para garantir a prioridade */ }

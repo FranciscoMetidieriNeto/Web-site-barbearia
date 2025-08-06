@@ -82,3 +82,10 @@ body {
     background-color: #dc3545 !important;
     border-color: #dc3545 !important;
 }
+
+/* NOVO ESTILO PARA O TÍTULO DA TABELA INDIVIDUAL */
+h4.professional-name {
+    color: #e0e0e0;
+    border-left: 4px solid #d4af37;
+    padding-left: 10px;
+}

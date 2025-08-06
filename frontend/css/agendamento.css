@@ -1,8 +1,4 @@
-/*
- * =========================================
- * --- Estilos da Página de Agendamento ---
- * =========================================
- */
+/* Estilos da Página de Agendamento */
 
 /* Botões de navegação da semana */
 #prev-week-btn, #next-week-btn {
@@ -10,180 +6,138 @@
     border-color: #d4af37;
     font-weight: 500;
 }
-
 #prev-week-btn:hover, #next-week-btn:hover {
     background-color: #d4af37;
     border-color: #d4af37;
     color: #000000;
 }
-
-/* Título que mostra o intervalo da semana */
 #week-display {
-    color: #f8f9fa; /* Branco suave para o título da semana */
+    color: #f8f9fa;
 }
 
-/*
- * =========================================
- * --- Estilos da Tabela de Agendamento ---
- * =========================================
- */
-
-/* Estilos da Tabela de Agendamento com Cores Fortes */
+/* Estilos da Tabela de Agendamento */
 .schedule-table {
-    background-color: #ffffff;
-    border-collapse: separate; /* Permite bordas arredondadas */
+    border-collapse: separate;
     border-spacing: 0;
-    overflow: hidden; /* Garante que o conteúdo respeite o border-radius */
-    border-radius: 0.375rem; /* Mesmo radius do Bootstrap */
+    overflow: hidden;
+    border-radius: 0.375rem;
 }
-
 .schedule-table th, .schedule-table td {
-    border: 1px solid #cfcfcf; /* Linhas da tabela */
+    border: 1px solid #444;
     vertical-align: middle;
+    text-align: center;
 }
-
-
-/* CABEÇALHO COM MAIS DESTAQUE */
 .schedule-table th {
-    background-color: #343a40; /* Cinza escuro (quase preto) */
-    color: #ffffff;          /* Texto branco */
+    background-color: #343a40;
+    color: #ffffff;
     padding: 0.75rem;
 }
-
 .schedule-table td.time-label {
     font-weight: bold;
     background-color: #343a40;
-    color: #ffffff; /* Texto branco para contraste */
-    text-align: center;
+    color: #ffffff;
 }
 
 /* Estilos dos Slots de Horário */
 .slot {
     padding: 1rem 0.5rem;
     transition: background-color 0.2s, color 0.2s;
-}
-
-/* VERDE MAIS VIBRANTE PARA DISPONÍVEL */
-.slot.available {
-    background-color: #28a745; /* Verde sucesso do Bootstrap */
-    color: #ffffff;           /* Texto branco para alto contraste */
-    cursor: pointer;
     font-weight: 500;
 }
-
-/* EFEITO HOVER MAIS NOTÁVEL */
-.slot.available:hover {
-    background-color: #218838; /* Um tom de verde mais escuro */
+.slot.available {
+    background-color: #28a745;
+    color: #ffffff;
+    cursor: pointer;
 }
-
-/* CINZA SÓLIDO PARA OCUPADO */
+.slot.available:hover {
+    background-color: #218838;
+}
 .slot.booked {
-    background-color: #6c757d; /* Cinza médio do Bootstrap */
-    color: #e9ecef;           /* Texto cinza claro */
+    background-color: #7d6c6c;
+    color: #e9ecef;
     cursor: not-allowed;
     text-decoration: line-through;
     opacity: 0.8;
 }
-
-/* DOURADO MAIS INTENSO PARA SELECIONADO */
 .slot.selected {
     background-color: #d4af37 !important;
-    color: #000000 !important; /* Texto preto para melhor leitura no dourado */
+    color: #000000 !important;
     border: 2px solid #000000;
     font-weight: bold;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
 }
-
+.slot.disabled {
+    background-color: #495057;
+    color: #adb5bd;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
 #schedule-table-container {
-    min-height: 400px; /* Evita que a página "pule" durante o carregamento */
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*
- * ==========================================================
- * --- Estilo do Formulário de Confirmação de Agendamento ---
- * ==========================================================
- */
-
-/* Container principal do formulário */
+/* Estilo do Formulário de Confirmação de Agendamento */
 #booking-form-container.card {
-    background-color: #1a1a1a; /* Fundo preto/cinza escuro sólido */
-    border: 1px solid #d4af37; /* Borda dourada sutil */
+    background-color: #1a1a1a;
+    border: 1px solid #d4af37;
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); /* Efeito de brilho dourado */
-    min-height: auto; /* Zera o min-height que vem da classe .card principal */
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    min-height: auto;
 }
-
-/* Título principal: "Confirmar Agendamento" */
 #booking-form-container h4 {
-    color: #d4af37; /* Cor dourada para destaque */
+    color: #d4af37;
     font-weight: 700;
     margin-bottom: 1rem;
 }
-
-/* Texto secundário: "Você selecionou..." */
 #booking-form-container .lead {
-    color: #adb5bd; /* Cinza claro, mas legível */
+    color: #adb5bd;
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
-
-/* Parte destacada do texto (data e hora) */
 #selected-slot-display {
-    color: #ffffff; /* Branco para máximo contraste */
+    color: #ffffff;
     font-weight: 600;
 }
-
-/* Etiquetas dos campos: "Seu Nome", "Seu Telefone" */
 #booking-form-container .form-label {
-    color: #ced4da; /* Cor branca suave para as etiquetas */
+    color: #ced4da;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-
-/* ===== INÍCIO DA ALTERAÇÃO ===== */
-
-/* Estilo unificado para Inputs de Texto e Campo de Seleção */
 #booking-form-container .form-control,
 #booking-form-container .form-select {
-    background-color: #343a40; /* Fundo cinza escuro para o campo */
-    color: #f8f9fa; /* Texto branco dentro do campo */
+    background-color: #343a40;
+    color: #f8f9fa;
     border: 1px solid #6c757d;
     padding: 0.75rem 1rem;
 }
-
-/* Estilo da seta do dropdown (cor dourada) */
-#booking-form-container .form-select {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23d4af37' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-}
-
-/* Efeito de FOCO unificado */
 #booking-form-container .form-control:focus,
 #booking-form-container .form-select:focus {
     background-color: #343a40;
     color: #f8f9fa;
-    border-color: #d4af37; /* Borda dourada ao focar */
-    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25); /* Brilho dourado ao focar */
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
 }
-
-/* ===== FIM DA ALTERAÇÃO ===== */
-
-/* Botão de confirmação - sobrescrevendo o .btn-success do Bootstrap */
 #booking-form-container .btn-success {
-    background-color: #d4af37; /* Fundo dourado para combinar com o tema */
-    color: #000000;           /* Texto preto para alta legibilidade */
+    background-color: #d4af37;
+    color: #000000;
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
     padding: 0.75rem;
     transition: background-color 0.2s ease;
 }
-
 #booking-form-container .btn-success:hover {
-    background-color: #b89b31; /* Dourado um pouco mais escuro ao passar o mouse */
+    background-color: #b89b31;
     color: #000000;
+}
+
+.form-label {
+    color: #ced4da;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
 }

@@ -1,56 +1,100 @@
-/* Estilo base da Navbar com efeito brilhante */
+/* Estilo base da Navbar */
 .navbar {
-    /* Sua cor de base original, também serve como fallback */
-    background-color: #d4af37; 
-
-    /* O gradiente que cria o efeito de brilho (de cima para baixo) */
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(255, 255, 255, 0.3), /* Um branco transparente para o brilho superior */
-        rgba(255, 255, 255, 0) 50% /* Transparente a partir do meio */
-    );
-    
-    /* Borda inferior um pouco mais escura para dar profundidade */
-    border-bottom: 1px solid #a39a13;
-
-    /* Uma sombra sutil para destacar a navbar da página */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    border-bottom: 2px solid #c5a12e;
+    border-top: 2px solid #c5a12e;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-
-/* Cor do nome da barbearia */
-.navbar-brand {
-    color: #343a40 !important;
-    font-size: 2em;
+/* NOVO ESTILO PARA O LOGÓTIPO */
+.navbar-brand img {
+    max-height: 100px; /* Controla a altura máxima do logo */
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo cinza claro semi-transparente */
+    border-radius: 50%; /* Deixa o fundo circular */
+    padding: 5px; /* Pequeno espaçamento interno */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.7); /* Adiciona um brilho dourado */
 }
 
 /* Cor dos links de navegação */
 .nav-link {
-    color: #343a40;
+    color: #ffffff;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Efeito ao passar o mouse sobre os links */
 .nav-link:hover, .nav-link:focus {
+    color: #d4af37;
+}
+
+/* CLASSE para o link da página ativa */
+.nav-link.active-link {
+    color: #d4af37;
+    border-bottom-color: #d4af37;
+}
+
+/* --- Botão de Login/Logar --- */
+.auth-link-button {
+    background-color: #d4af37;
+    color: #000000 !important;
+    border-radius: 32px;
+    font-size: 1em !important;
+    padding: 0.5em 1em !important;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.auth-link-button:hover, .auth-link-button:focus {
+    background-color: #ffffff;
+    color: #000000 !important;
+    transform: scale(1.05);
+}
+
+/* --- Estilos para o Menu Dropdown do Usuário Logado --- */
+.user-menu-button {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    background: none;
+    border: none;
+}
+
+/* Fundo escuro para o menu inteiro */
+.dropdown-menu {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 0.25rem 0;
+}
+
+/* Estilo geral para os itens e texto cinza claro */
+.dropdown-item {
+    color: #ced4da;
+    font-size: 1.2em !important;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+/* Efeito de hover para todos os itens */
+.dropdown-item:hover {
+    background-color: #3c4248;
     color: #ffffff;
 }
 
-/* --- ESTILO SOMENTE PARA O BOTÃO ADMIN --- */
-
-.admin-link-button {
-    background-color: #343a40; /* Fundo escuro, usando a cor do texto dos outros links */
-    color: #ffffff !important; /* Texto branco para criar contraste */
-    border-radius: 6px;
-    font-size: 1em !important; /* Tamanho de fonte um pouco menor para caber no botão */
-    padding: 0.5em 1em !important; /* Espaçamento interno (usa 'em' para ser proporcional) */
-    margin-left: 1rem; /* Distância dos outros links */
-    transition: all 0.3s ease-in-out; /* Transição suave para todas as propriedades */
+/* Separador */
+.dropdown-divider {
+    border-top: 1px solid #444;
 }
 
-.admin-link-button:hover, .admin-link-button:focus {
-    background-color: #000000; /* Fundo preto no hover */
-    color: #d4af37 !important; /* Texto dourado no hover, combinando com a navbar */
-    transform: scale(1.05); /* Efeito de leve crescimento */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* COR DOS ÍCONES INDIVIDUAIS */
+.settings-link i {
+    color: #c5a12e;
+}
+.logout-link i {
+    color: #dc3545;
 }

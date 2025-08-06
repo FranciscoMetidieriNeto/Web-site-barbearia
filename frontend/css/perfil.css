@@ -1,0 +1,41 @@
+.profile-title {
+    color: #d4af37;
+    font-weight: 700;
+}
+.profile-header .lead {
+    color: #ced4da;
+}
+.profile-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+.profile-card .card-header {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #d4af37;
+}
+.profile-card .card-header h3 {
+    color: #d4af37;
+}
+
+/* Estilos para a tabela e botões de ação */
+.profile-card .table {
+    --bs-table-bg: #2c2c2c;
+    --bs-table-border-color: #d4af37;
+    --bs-table-striped-bg: #343a40;
+    --bs-table-hover-bg: #3c4248;
+    /* REMOVIDO: A propriedade 'color' foi movida para a regra mais específica abaixo */
+}
+
+/* REGRA ADICIONADA PARA GARANTIR O TEXTO BRANCO */
+.profile-card .table th{
+    color:#d4af37;
+}
+.profile-card .table td {
+    color: #f8f9fa; /* Define a cor do texto para um branco suave diretamente nas células */
+}
+
+.appointment-actions .btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Barbearia Stilo's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/configuracoes.css">
+</head>
+<body>
+
+    <header id="navbar-placeholder"></header>
+
+    <main class="container my-5">
+        <div class="settings-header text-center mb-5">
+            <h1 class="settings-title">Configurações do Perfil</h1>
+            <p class="lead">Atualize suas informações pessoais.</p>
+        </div>
+
+        <div class="card settings-card">
+            <div class="card-body p-4">
+                <form id="profile-settings-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="username" class="form-label">Nome de Usuário (para login)</label>
+                            <input type="text" id="username" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <hr class="my-4">
+                    <p class="text-muted senha-instrucao">Deixe os campos abaixo em branco se não quiser alterar a sua senha.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="new-password" class="form-label">Nova Senha</label>
+                            <input type="password" id="new-password" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="confirm-password" class="form-label">Confirmar Nova Senha</label>
+                            <input type="password" id="confirm-password" class="form-control">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="js/supabaseClient.js"></script>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/configuracoes.js"></script>
+</body>
+</html>
